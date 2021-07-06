@@ -1,12 +1,12 @@
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
-
 import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import 'modern-normalize/modern-normalize.css';
+import './stylesheet/sass/main.scss';
 
-const link = React.cloneElement('a', { href: 'reactjs.org' }, 'Ссылка');
-
-console.log(link);
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root'),
+);
