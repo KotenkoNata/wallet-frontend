@@ -1,23 +1,29 @@
-* {
-  box-sizing: border-box;
+@import './breakpoints';
+@import './fonts';
+
+.Container {
+  margin-right: auto;
+  margin-left: auto;
+
+  @include for-size(phone) {
+    max-width: $phone-width;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include for-size(tablet) {
+    max-width: $tablet-width;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @include for-size(desktop) {
+    max-width: $desktop-width;
+  }
 }
 
-.container {
+html,
+body {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: aqua;
-
-  @media (min-width: $mobile) {
-    width: 280px;
-  }
-  @media (min-width: $tablet) {
-    width: 618px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 882px;
-  }
+  height: 100%;
 }
 
 body {
@@ -25,7 +31,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.33;
+  line-height: 1.5;
 }
 
 .list {
@@ -49,4 +55,9 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.section {
+  margin: 0;
+  padding: 0;
 }

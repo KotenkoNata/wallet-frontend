@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import Login from "../components/LoginForm";
-import Section from "../components/Section";
+import Login from '../components/LoginForm';
 
-const LoginView = () => {
+import Section from '../components/Section';
+
+const LoginPage = () => {
   return (
     <>
       <Section>
@@ -13,4 +14,4 @@ const LoginView = () => {
   );
 };
 
-export default LoginView;
+export default LoginPage;
