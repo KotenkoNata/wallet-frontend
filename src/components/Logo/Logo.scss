@@ -1,0 +1,22 @@
+@import '../../stylesheet/sass/main.scss';
+
+.Logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Logo-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.Logo-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}

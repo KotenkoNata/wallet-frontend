@@ -1,0 +1,28 @@
+.App-name-container {
+  background-color: #e7eaf2;
+  width: 43%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/images/EllipseLoginPurple.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: left;
+}
+
+.App-name {
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 45px;
+  padding-top: 597px;
+}
+
+.Login-frame {
+  position: absolute;
+  max-width: 435px;
+  // align-items: center;
+}

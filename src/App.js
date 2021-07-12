@@ -1,11 +1,11 @@
 import React from 'react';
 
-import HomeView from './views/LoginPage';
+import LoginPage from './views/LoginPage';
 
 const App = () => {
   return (
     <>
-      <HomeView />
+      <LoginPage />
     </>
   );
 };
