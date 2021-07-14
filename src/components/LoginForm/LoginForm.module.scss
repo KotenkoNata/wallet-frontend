@@ -1,6 +1,6 @@
 @import '../../stylesheet/sass/vars';
 
-.Login-Form-container {
+.LoginFormContainer {
   background-color: $white-color;
   border-radius: 20px;
   padding-top: 40px;
@@ -8,14 +8,14 @@
   max-width: 540px;
 }
 
-.Login-page-container {
+.LoginPageContainer {
   background: url(../../assets/images/Rectangle.png);
   background-repeat: no-repeat;
   max-width: 720px;
   padding: 136px 85px 116px 95px;
 }
 
-.Login-container {
+.LoginContainer {
   display: flex;
   margin: auto;
 }

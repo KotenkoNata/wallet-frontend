@@ -1,12 +1,12 @@
 import React from 'react';
 
-import './Button.scss';
+import styles from './Button.module.scss';
 
-export default function Button({ children }) {
+export default function Button({ name }) {
   return (
     <>
-      <button className="Button" type="submit">
-        {children}
+      <button className={styles.Button} type="submit">
+        {name}
       </button>
     </>
   );

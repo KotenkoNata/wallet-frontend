@@ -1,12 +1,12 @@
 @import '../../stylesheet/sass/vars';
 
-.RegistrationForm-form {
+.RegistrationForm {
   display: grid;
   place-items: center;
   margin-top: 50px;
 }
 
-.RegistrationForm-filed {
+.RegistrationFormFiled {
   display: flex;
   border-bottom: 1px solid #e0e0e0;
   position: relative;
@@ -50,7 +50,7 @@
   }
 }
 
-.RegistrationForm-field {
+.RegistrationFormField {
   font-family: 'Circe';
   font-style: normal;
   font-weight: 400;
@@ -74,15 +74,15 @@
   }
 }
 
-.RegistrationForm-email-field-icon,
-.RegistrationForm-password-field-icon {
+.RegistrationFormEmailFieldIcon,
+.RegistrationFormPasswordFieldIcon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
   margin-bottom: 3px;
 }
 
-.RegistrationForm-Form-container {
+.RegistrationFormFormContainer {
   background-color: $white-color;
   border-radius: 20px;
   padding-top: 40px;
@@ -90,7 +90,7 @@
   max-width: 540px;
 }
 
-.RegistrationForm-page-container {
+.RegistrationFormPageContainer {
   background: url(../../assets/images/Rectangle.png);
 
   background-repeat: no-repeat;
@@ -98,12 +98,12 @@
   padding: 52px 85px 52px 95px;
 }
 
-.RegistrationForm-container {
+.RegistrationFormContainer {
   display: flex;
   margin: auto;
 }
 
-.Registration-App-name-container {
+.RegistrationAppNameContainer {
   background-color: #e7eaf2;
   width: 43%;
   position: relative;
@@ -116,7 +116,7 @@
   background-position-x: left;
 }
 
-.Registration-App-name {
+.RegistrationAppName {
   text-align: center;
   font-family: Poppins;
   font-style: normal;
@@ -126,7 +126,7 @@
   padding-top: 597px;
 }
 
-.Registration-Login-frame {
+.RegistrationLoginFrame {
   position: absolute;
   max-width: 435px;
 }

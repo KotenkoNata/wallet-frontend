@@ -1,13 +1,13 @@
 @import '../../stylesheet/sass/vars';
 
-.LoginForm-form {
+.LoginForm {
   display: grid;
   place-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.Login-form-filed {
+.LoginFormFiled {
   display: flex;
   border-bottom: 1px solid #e0e0e0;
   position: relative;
@@ -51,7 +51,7 @@
   }
 }
 
-.LoginForm-field {
+.LoginFormField {
   font-family: 'Circe';
   font-style: normal;
   font-weight: 400;
@@ -75,8 +75,8 @@
   }
 }
 
-.Login-email-field-icon,
-.Login-password-field-icon {
+.EmailFieldIcon,
+.PasswordFieldIcon {
   width: 24px;
   height: 24px;
   margin-left: 10px;

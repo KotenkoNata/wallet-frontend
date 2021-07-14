@@ -1,37 +1,37 @@
 import React from 'react';
 
 import logo from '../../assets/images/Logo.svg';
-import './FormFields.scss';
+import styles from './FormFields.module.scss';
 
 export default function FormFields() {
   return (
     <>
-      <form autoComplete="off" className="LoginForm-form">
-        <div className="Login-form-filed">
+      <form autoComplete="off" className={styles.LoginForm}>
+        <div className={styles.LoginFormFiled}>
           <label></label>
           <span>
-            <svg className="Login-email-field-icon">
+            <svg className={styles.EmailFieldIcon}>
               <use href={logo + '#email-field-icon'}></use>
             </svg>
           </span>
           <input
             type="email"
-            className="LoginForm-field"
+            className={styles.LoginFormField}
             name="email"
             placeholder={'E-mail'}
           />
         </div>
 
-        <div className="Login-form-filed">
+        <div className={styles.LoginFormFiled}>
           <label></label>
           <span>
-            <svg className="Login-password-field-icon">
+            <svg className={styles.PasswordFieldIcon}>
               <use href={logo + '#password-field-icon'}></use>
             </svg>
           </span>
           <input
             type="password"
-            className="LoginForm-field"
+            className={styles.LoginFormField}
             name="Пароль"
             placeholder={'Пароль'}
           />

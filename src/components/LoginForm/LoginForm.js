@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './LoginForm.scss';
+import styles from './LoginForm.module.scss';
 import Logo from '../Logo';
 import AppTitle from '../AppTitle';
 import Button from '../Button';
@@ -8,14 +8,14 @@ import FormFields from '../FormFields/FormFields';
 
 export default function LoginForm() {
   return (
-    <div className="Login-container">
+    <div className={styles.LoginContainer}>
       <AppTitle />
-      <div className="Login-page-container">
-        <div className="Login-Form-container">
+      <div className={styles.LoginPageContainer}>
+        <div className={styles.LoginFormContainer}>
           <Logo />
           <FormFields />
-          <Button>Вход</Button>
-          <Button>Регистрация</Button>
+          <Button name="Вход" />
+          <Button name="Регистрация" />
         </div>
       </div>
     </div>

@@ -1,12 +1,12 @@
 @import '../../stylesheet/sass/main.scss';
 
-.Logo-container {
+.LogoContainer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.Logo-title {
+.LogoTitle {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
@@ -15,7 +15,7 @@
   line-height: 1.33;
 }
 
-.Logo-icon {
+.LogoIcon {
   width: 40px;
   height: 40px;
   margin-right: 20px;
