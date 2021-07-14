@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './Section.scss';
+import styles from './Section.module.scss';
 import Container from '../Container/Container';
 
 const Section = ({ children }) => (
-  <section className="section">
+  <section className={styles.section}>
     <Container>{children}</Container>
   </section>
 );

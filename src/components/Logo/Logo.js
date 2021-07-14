@@ -1,15 +1,15 @@
 import React from 'react';
 
-import './Logo.scss';
+import styles from './Logo.module.scss';
 import logo from '../../assets/images/Logo.svg';
 
 export default function Logo() {
   return (
-    <div className="Logo-container">
-      <svg className="Logo-icon">
+    <div className={styles.LogoContainer}>
+      <svg className={styles.LogoIcon}>
         <use href={logo + '#wallet-icon'}></use>
       </svg>
-      <h2 className="Logo-title">Wallet</h2>
+      <h2 className={styles.LogoTitle}>Wallet</h2>
     </div>
   );
 }

@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Container.scss';
+import styles from './Container.module.scss';
 
-const Container = ({ children }) => <div className="Container">{children}</div>;
+const Container = ({ children }) => (
+  <div className={styles.Container}>{children}</div>
+);
 
 Container.propTypes = {
   children: PropTypes.node,

@@ -1,12 +1,13 @@
 import React from 'react';
 
-import './Button.scss';
+import styles from './Button.module.scss';
 
-export default function Button() {
+export default function Button({ name }) {
   return (
     <>
-      <button className="Button">Вход</button>
-      <button className="Button-">Регистрация</button>
+      <button className={styles.Button} type="submit">
+        {name}
+      </button>
     </>
   );
 }
