@@ -1,1 +1,29 @@
 @import '../../stylesheet/sass/main.scss';
+
+.Button {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $purple-color;
+  min-width: 300px;
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid $purple-color;
+  border-radius: 20px;
+  background-color: $white-color;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $green-color;
+    border: none;
+  }
+}

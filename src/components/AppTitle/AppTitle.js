@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Title.scss';
+import './AppTitle.scss';
 
 const Title = () => {
   return (

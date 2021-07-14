@@ -1,0 +1,132 @@
+@import '../../stylesheet/sass/vars';
+
+.RegistrationForm-form {
+  display: grid;
+  place-items: center;
+  margin-top: 50px;
+}
+
+.RegistrationForm-filed {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  margin-bottom: 40px;
+  min-width: 410px;
+
+  &:last-of-type {
+    margin-bottom: 50px;
+  }
+
+  &:hover {
+    &::after {
+      content: ' ';
+
+      position: absolute;
+
+      left: 0;
+      bottom: -10px;
+
+      display: block;
+      width: 45%;
+      height: 4px;
+      background-color: #24cca7;
+      border-radius: 2px;
+      box-shadow: 0px 1px 8px rgba(36, 204, 167, 0.5);
+    }
+    &::before {
+      content: ' ';
+
+      position: absolute;
+
+      left: 0;
+      bottom: -10px;
+
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: #e5f1ef;
+      border-radius: 2px;
+    }
+  }
+}
+
+.RegistrationForm-field {
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  background: $white-color;
+  border: none;
+  margin-left: 20px;
+
+  &::placeholder {
+    color: #bdbdbd;
+    font-family: 'Circe';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+.RegistrationForm-email-field-icon,
+.RegistrationForm-password-field-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
+
+.RegistrationForm-Form-container {
+  background-color: $white-color;
+  border-radius: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 540px;
+}
+
+.RegistrationForm-page-container {
+  background: url(../../assets/images/Rectangle.png);
+
+  background-repeat: no-repeat;
+  max-width: 720px;
+  padding: 52px 85px 52px 95px;
+}
+
+.RegistrationForm-container {
+  display: flex;
+  margin: auto;
+}
+
+.Registration-App-name-container {
+  background-color: #e7eaf2;
+  width: 43%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/images/EllipseLoginPurple.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: left;
+}
+
+.Registration-App-name {
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 45px;
+  padding-top: 597px;
+}
+
+.Registration-Login-frame {
+  position: absolute;
+  max-width: 435px;
+}

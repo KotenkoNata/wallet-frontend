@@ -1,0 +1,84 @@
+@import '../../stylesheet/sass/vars';
+
+.LoginForm-form {
+  display: grid;
+  place-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.Login-form-filed {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+
+  min-width: 410px;
+
+  &:first-of-type {
+    margin-bottom: 40px;
+  }
+
+  &:hover {
+    &::after {
+      content: ' ';
+
+      position: absolute;
+
+      left: 0;
+      bottom: -10px;
+
+      display: block;
+      width: 45%;
+      height: 4px;
+      background-color: #24cca7;
+      border-radius: 2px;
+      box-shadow: 0px 1px 8px rgba(36, 204, 167, 0.5);
+    }
+    &::before {
+      content: ' ';
+
+      position: absolute;
+
+      left: 0;
+      bottom: -10px;
+
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: #e5f1ef;
+      border-radius: 2px;
+    }
+  }
+}
+
+.LoginForm-field {
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  background: #ffffff;
+  border: none;
+  margin-left: 20px;
+
+  &::placeholder {
+    color: #bdbdbd;
+    font-family: 'Circe';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+.Login-email-field-icon,
+.Login-password-field-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
