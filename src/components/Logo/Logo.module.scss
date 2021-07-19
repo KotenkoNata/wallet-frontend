@@ -13,10 +13,19 @@
   font-size: 30px;
   color: #000000;
   line-height: 1.33;
+
+  @include for-size(phone) {
+    font-size: 18px;
+  }
 }
 
 .LogoIcon {
   width: 40px;
   height: 40px;
   margin-right: 20px;
+
+  @include for-size(phone) {
+    transform: scale(0.75);
+    margin-right: 15px;
+  }
 }

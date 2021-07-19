@@ -1,21 +1,57 @@
-@import '../../stylesheet/sass/vars';
+@import '../../stylesheet/sass/main.scss';
+
+.LoginContainer {
+  background-repeat: no-repeat;
+  position: relative;
+
+  @include for-size(tablet) {
+    background-color: #e7eaf2;
+
+    background-image: url('../../assets/images/ElipseLogonPurpleTablet.svg'),
+      url('../../assets/images/ElipseLoginPinkTablet.svg');
+    background-position: bottom, top;
+    background-position-x: left, right;
+    padding: 60px 114px 196px 114px;
+  }
+  @include for-size(desktop) {
+    display: flex;
+    margin: auto;
+  }
+}
 
 .LoginFormContainer {
   background-color: $white-color;
-  border-radius: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  max-width: 540px;
+
+  @include for-size(desktop) {
+    max-width: 540px;
+    border-radius: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @include for-size(tablet) {
+    border-radius: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @include for-size(phone) {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
 }
 
 .LoginPageContainer {
-  background: url(../../assets/images/Rectangle.png);
-  background-repeat: no-repeat;
-  max-width: 720px;
-  padding: 136px 85px 116px 95px;
-}
+  @include for-size(desktop) {
+    background: url(../../assets/images/Optimize/LoginFormBGDesktop.png);
+    background-repeat: no-repeat;
+    max-width: 720px;
+    padding: 136px 85px 116px 95px;
 
-.LoginContainer {
-  display: flex;
-  margin: auto;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background: url(../../assets/images/Optimize/LoginFormBGDesktop_2.png);
+    }
+  }
 }

@@ -26,4 +26,9 @@
     background-color: $green-color;
     border: none;
   }
+
+  @include for-size(phone) {
+    min-width: 280px;
+    letter-spacing: 0.1em;
+  }
 }

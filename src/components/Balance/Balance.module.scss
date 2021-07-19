@@ -1,0 +1,33 @@
+@import '../../stylesheet/sass/main.scss';
+
+.container {
+  max-width: 350px;
+  border-radius: 30px;
+  background-color: $white-color;
+  text-align: left;
+
+  padding: 8px 0 12px 40px;
+  margin-bottom: 30px;
+
+  @include for-size(tablet) {
+    margin-bottom: 40px;
+  }
+
+  @include for-size(phone) {
+    max-width: 280px;
+    padding: 8px 0 13px 30px;
+  }
+}
+
+.title {
+  font-weight: normal;
+  font-size: 12px;
+  color: #a6a6a6;
+  text-transform: uppercase;
+}
+
+.amount {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 28px;
+}

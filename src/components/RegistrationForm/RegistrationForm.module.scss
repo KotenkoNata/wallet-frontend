@@ -1,4 +1,50 @@
-@import '../../stylesheet/sass/vars';
+@import '../../stylesheet/sass/main.scss';
+
+.RegistrationFormContainer {
+  background-color: #e7eaf2;
+
+  @include for-size(desktop) {
+    display: flex;
+    margin: auto;
+  }
+
+  @include for-size(tablet) {
+    background-color: #e7eaf2;
+    background-repeat: no-repeat;
+
+    background-image: url('../../assets/images/ElipseLogonPurpleTablet.svg'),
+      url('../../assets/images/ElipseLoginPinkTablet.svg');
+    background-position: bottom, top;
+    background-position-x: left, right;
+    padding: 60px 114px 48px 114px;
+  }
+}
+
+.RegistrationAppNameContainer {
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+
+  @include for-size(desktop) {
+    width: 43%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/images/EllipseLoginPurple.svg');
+
+    background-position: bottom;
+    background-position-x: left;
+  }
+
+  @include for-size(tablet) {
+    margin-bottom: 50px;
+  }
+
+  @include for-size(phone) {
+    display: none;
+  }
+}
 
 .RegistrationForm {
   display: grid;
@@ -15,6 +61,10 @@
 
   &:last-of-type {
     margin-bottom: 50px;
+
+    @include for-size(phone) {
+      margin-bottom: 40px;
+    }
   }
 
   &:hover {
@@ -48,6 +98,10 @@
       border-radius: 2px;
     }
   }
+
+  @include for-size(phone) {
+    min-width: 280px;
+  }
 }
 
 .RegistrationFormField {
@@ -80,6 +134,11 @@
   height: 24px;
   margin-left: 10px;
   margin-bottom: 3px;
+
+  @include for-size(phone) {
+    transform: scale(0.88);
+    margin-left: 12px;
+  }
 }
 
 .RegistrationFormFormContainer {
@@ -87,46 +146,60 @@
   border-radius: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
-  max-width: 540px;
+
+  @include for-size(desktop) {
+    max-width: 540px;
+  }
+
+  @include for-size(phone) {
+    border-radius: 0;
+    max-width: 320px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
 }
 
 .RegistrationFormPageContainer {
-  background: url(../../assets/images/Rectangle.png);
-
-  background-repeat: no-repeat;
-  max-width: 720px;
-  padding: 52px 85px 52px 95px;
-}
-
-.RegistrationFormContainer {
-  display: flex;
   margin: auto;
+
+  @include for-size(tablet) {
+    max-width: 540px;
+  }
+
+  @include for-size(desktop) {
+    background: url(../../assets/images/Optimize/LoginFormBGDesktop.png);
+
+    background-repeat: no-repeat;
+    max-width: 720px;
+    padding: 52px 85px 52px 95px;
+  }
+
+  @include for-size(phone) {
+    max-width: 320px;
+  }
 }
 
-.RegistrationAppNameContainer {
-  background-color: #e7eaf2;
-  width: 43%;
-  position: relative;
+.textRegistrationAppContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('../../assets/images/EllipseLoginPurple.svg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-position-x: left;
+  margin-left: 40px;
 }
 
 .RegistrationAppName {
-  text-align: center;
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
   line-height: 45px;
-  padding-top: 597px;
+
+  @include for-size(desktop) {
+    text-align: center;
+    padding-top: 597px;
+  }
 }
 
 .RegistrationLoginFrame {
-  position: absolute;
-  max-width: 435px;
+  @include for-size(desktop) {
+    position: absolute;
+    max-width: 435px;
+  }
 }
