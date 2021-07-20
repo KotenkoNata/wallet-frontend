@@ -1,0 +1,55 @@
+@import '../../stylesheet/sass/main.scss';
+
+.container {
+  border-radius: 30px;
+  background-repeat: no-repeat;
+
+  @include for-size(desktop) {
+    max-width: 348px;
+    height: 347px;
+    padding: 17px 30px 22px 30px;
+
+    background: url(../../assets/images/Optimize/CurrencyBackground.png);
+  }
+
+  @include for-size(tablet) {
+    margin-right: auto;
+    margin-left: 20px;
+    min-width: 334px;
+    height: 174px;
+    background: url(../../assets/images/Optimize/CurrencyBGTablet.png);
+
+    padding: 11px 20px 0 20px;
+  }
+}
+
+.table {
+  width: 100%;
+  color: white;
+}
+
+.TableHead {
+  font-weight: bold;
+  font-size: 18px;
+
+  th {
+    padding-bottom: 16px;
+
+    @include for-size(tablet) {
+      padding-bottom: 12px;
+    }
+  }
+}
+
+.TableColumn {
+  font-weight: normal;
+  font-size: 16px;
+
+  td {
+    padding: 10px;
+
+    @include for-size(tablet) {
+      padding: 6px;
+    }
+  }
+}

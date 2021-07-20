@@ -17,13 +17,19 @@ export default function RegistrationForm() {
                 srcset="/static/FrameFrameDesktopRegistration_1.png 1x, /static/FrameFrameDesktopRegistration_2.png 2x"
                 media="(min-width: 1280px)"
               />
+              <source
+                srcset="/static/RegistrationFormBGTablet.png 1x, /static/RegistrationFormBGTablet-2.png 2x"
+                media="(min-width: 768px)"
+              />
               <img
                 src="/static/FrameFrameDesktopRegistration_1.png"
                 alt="Frame Finance App login"
               />
             </picture>
           </div>
-          <h1 className={styles.RegistrationAppName}>Finance App</h1>
+          <div className={styles.textRegistrationAppContainer}>
+            <h1 className={styles.RegistrationAppName}>Finance App</h1>
+          </div>
         </div>
         <div className={styles.RegistrationFormPageContainer}>
           <div className={styles.RegistrationFormFormContainer}>

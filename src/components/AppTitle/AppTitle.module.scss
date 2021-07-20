@@ -1,28 +1,54 @@
+@import '../../stylesheet/sass/main.scss';
+
 .Container {
-  background-color: #e7eaf2;
-  width: 43%;
-  position: relative;
+  display: none;
+
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    background-color: #e7eaf2;
+    width: 43%;
+    background-image: url('../../assets/images/EllipseLoginPurple.svg');
+    background-position: bottom;
+    background-position-x: left;
+
+    background-repeat: no-repeat;
+  }
+
+  @include for-size(tablet) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+.LoginFrame {
+  @include for-size(desktop) {
+    max-width: 435px;
+    position: absolute;
+  }
+  @include for-size(tablet) {
+    max-width: 260px;
+  }
+}
+
+.textFrame {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('../../assets/images/EllipseLoginPurple.svg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-position-x: left;
+  margin-left: 40px;
 }
 
 .AppName {
-  text-align: center;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
   line-height: 45px;
-  padding-top: 597px;
-}
 
-.LoginFrame {
-  position: absolute;
-  max-width: 435px;
-  // align-items: center;
+  @include for-size(desktop) {
+    padding-top: 597px;
+    text-align: center;
+  }
 }

@@ -1,10 +1,14 @@
-@import '../../stylesheet/sass/vars';
+@import '../../stylesheet/sass/main.scss';
 
 .LoginForm {
   display: grid;
   place-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
+
+  @include for-size(phone) {
+    margin-bottom: 40px;
+  }
 }
 
 .LoginFormFiled {
@@ -49,6 +53,10 @@
       border-radius: 2px;
     }
   }
+
+  @include for-size(phone) {
+    min-width: 280px;
+  }
 }
 
 .LoginFormField {
@@ -73,6 +81,10 @@
     border: none;
     outline: none;
   }
+
+  @include for-size(phone) {
+    margin-left: 22px;
+  }
 }
 
 .EmailFieldIcon,
@@ -81,4 +93,10 @@
   height: 24px;
   margin-left: 10px;
   margin-bottom: 3px;
+
+  @include for-size(phone) {
+    transform: scale(0.88);
+    margin-left: 12px;
+    margin-bottom: 2px;
+  }
 }
