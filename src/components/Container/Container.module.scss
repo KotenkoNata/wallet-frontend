@@ -8,6 +8,7 @@
 
   @include for-size(phone) {
     max-width: $phone-width;
+    padding: 0;
   }
   @include for-size(tablet) {
     max-width: $tablet-width;

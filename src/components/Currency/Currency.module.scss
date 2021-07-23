@@ -19,7 +19,15 @@
     height: 174px;
     background: url(../../assets/images/Optimize/CurrencyBGTablet.png);
 
+    padding: 11px 20px 22px 20px;
+  }
+
+  @include for-size(phone) {
+    background: url(../../assets/images/Optimize/CurrencyBGPhone.png);
+    min-width: 280px;
+    height: 174px;
     padding: 11px 20px 0 20px;
+    margin-top: 30px;
   }
 }
 
@@ -50,6 +58,10 @@
 
     @include for-size(tablet) {
       padding: 6px;
+    }
+
+    @include for-size(phone) {
+      padding: 5px;
     }
   }
 }

@@ -12,6 +12,8 @@ import Currency from '../Currency';
 
 import Table from '../Table';
 
+import Modal from '../Modal';
+
 export default function HomeTab() {
   return (
     <>
@@ -30,6 +32,7 @@ export default function HomeTab() {
           <Table />
         </div>
       </div>
+      <Modal />
     </>
   );
 }
