@@ -3,7 +3,7 @@ import styles from './Modal.module.scss';
 
 import icon from '../../assets/images/icon.svg';
 
-import Button from '../Button';
+import Button from '../FormButton';
 
 import ToggleButton from '../ToggleButton/ToggleButton';
 
