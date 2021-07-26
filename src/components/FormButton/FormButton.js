@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './Button.module.scss';
+import styles from './FormButton.module.scss';
 
 export default function Button({ name }) {
   return (

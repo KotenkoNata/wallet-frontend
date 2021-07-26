@@ -1,0 +1,65 @@
+.container {
+  display: inline-flex;
+  align-items: center;
+  label {
+    &:first-of-type {
+      margin-right: 20px;
+    }
+
+    &:last-of-type {
+      margin-left: 20px;
+    }
+  }
+}
+
+.ToggleButton {
+  appearance: none;
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  margin: 0;
+  vertical-align: top;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+
+  &::after {
+    content: '';
+
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    position: absolute;
+    left: -3px;
+    top: -2px;
+
+    width: 44px;
+    height: 44px;
+    background: url(../../assets/images/BtnPlus.svg);
+    box-shadow: 0px 6px 15px rgba(36, 204, 167, 0.5);
+    border-radius: 50%;
+
+    transform: translateX(0);
+
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  }
+
+  &:checked::after {
+    transform: translateX(calc(100% - 12px));
+    background-repeat: no-repeat;
+    background: url(../../assets/images/BtnMinus111.svg);
+    box-shadow: 0px 6px 15px rgba(255, 101, 150, 0.5);
+    left: 6px;
+  }
+}
+
+.text {
+  font-weight: bold;
+  font-size: 16px;
+  color: #e0e0e0;
+}

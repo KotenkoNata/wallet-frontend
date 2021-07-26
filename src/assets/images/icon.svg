@@ -1,0 +1,36 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-baseline" viewBox="0 0 32 32">
+<path fill="#4a56e2" style="fill: var(--color1, #4a56e2)" d="M12 14.667h-2.667v2.667h2.667v-2.667zM17.333 14.667h-2.667v2.667h2.667v-2.667zM22.667 14.667h-2.667v2.667h2.667v-2.667zM25.333 5.333h-1.333v-2.667h-2.667v2.667h-10.667v-2.667h-2.667v2.667h-1.333c-1.48 0-2.653 1.2-2.653 2.667l-0.013 18.667c0 1.473 1.194 2.667 2.667 2.667v0h18.667c1.467 0 2.667-1.2 2.667-2.667v-18.667c0-1.467-1.2-2.667-2.667-2.667zM25.333 26.667h-18.667v-14.667h18.667v14.667z"></path>
+</symbol>
+<symbol id="icon-BtnMinus111" viewBox="0 0 32 32">
+<path fill="#ff6596" style="fill: var(--color2, #ff6596)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color3, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4545" d="M8.727 16h14.545"></path>
+</symbol>
+<symbol id="icon-BtnPlus" viewBox="0 0 32 32">
+<path fill="#24cca7" style="fill: var(--color4, #24cca7)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color3, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4545" d="M16 8.727v14.545M8.727 16h14.545"></path>
+</symbol>
+<symbol id="icon-ButtonCloseModal" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.7778" d="M1.778 1.778l28.444 28.444M1.778 30.222l28.444-28.444"></path>
+</symbol>
+<symbol id="icon-CalendarIcon" viewBox="0 0 29 32">
+<path fill="#4a56e2" style="fill: var(--color1, #4a56e2)" d="M9.6 14.4h-3.2v3.2h3.2v-3.2zM16 14.4h-3.2v3.2h3.2v-3.2zM22.4 14.4h-3.2v3.2h3.2v-3.2zM25.6 3.2h-1.6v-3.2h-3.2v3.2h-12.8v-3.2h-3.2v3.2h-1.6c-1.776 0-3.184 1.44-3.184 3.2l-0.016 22.4c0 1.767 1.433 3.2 3.2 3.2v0h22.4c1.76 0 3.2-1.44 3.2-3.2v-22.4c0-1.76-1.44-3.2-3.2-3.2zM25.6 28.8h-22.4v-17.6h22.4v17.6z"></path>
+</symbol>
+<symbol id="icon-ElipseLoginPinkTablet" viewBox="0 0 30 32">
+<path fill="#ffd8d0" style="fill: var(--color5, #ffd8d0)" d="M42.147 17.551c-5.798 8.12-16.297 9.151-25.166 6.039-10.174-4.099-13.464-15.571-9.602-25.155 3.582-8.892 14.238-5.42 23.339-5.659 16.841-0.308 22.416 10.482 11.43 24.776z"></path>
+</symbol>
+<symbol id="icon-ElipseLogonPurpleTablet" viewBox="0 0 39 32">
+<path fill="#c5baff" style="fill: var(--color6, #c5baff)" d="M31.101 34.91c-5.598 9.522-17.074 11.689-27.159 9.127-11.621-3.522-16.374-15.85-13.055-26.798 3.079-10.156 15.169-7.373 25.181-8.529 18.541-1.99 25.747 9.361 15.033 26.2z"></path>
+</symbol>
+<symbol id="icon-EllipseLogin" viewBox="0 0 46 32">
+<path fill="#ffd8d0" style="fill: var(--color5, #ffd8d0)" d="M46.129 22.271c-7.358 10.303-20.68 11.612-31.934 7.663-12.91-5.201-17.085-19.758-12.185-31.92 4.546-11.283 18.067-6.878 29.615-7.181 21.37-0.39 28.445 13.301 14.503 31.439z"></path>
+</symbol>
+<symbol id="icon-EllipseLoginPurple" viewBox="0 0 38 32">
+<path fill="#c5baff" style="fill: var(--color6, #c5baff)" d="M30.409 34.133c-5.473 9.31-16.694 11.428-26.554 8.924-11.362-3.444-16.009-15.497-12.765-26.201 3.010-9.93 14.831-7.209 24.62-8.339 18.128-1.946 25.173 9.153 14.698 25.616z"></path>
+</symbol>
+<symbol id="icon-Logo" viewBox="0 0 32 32">
+<path fill="#c5baff" style="fill: var(--color6, #c5baff)" d="M30.409 34.133c-5.473 9.31-16.694 11.428-26.554 8.924-11.362-3.444-16.009-15.497-12.765-26.201 3.010-9.93 14.831-7.209 24.62-8.339 18.128-1.946 25.173 9.153 14.698 25.616z"></path>
+</symbol>
+</defs>
+</svg>
